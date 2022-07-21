@@ -15,8 +15,9 @@
   "module": "dist/barcode-detector.module.js",
   "unpkg": "dist/barcode-detector.umd.js",
   "amdName": "BarcodeDetectorPolyfill",
+  "types": "dist/BarcodeDetector.d.ts",
   "scripts": {
-    "build": "microbundle",
+    "build": "(cd src/worker && ./build.sh) && microbundle",
     "dev": "microbundle watch"
   },
   "dependencies": {
